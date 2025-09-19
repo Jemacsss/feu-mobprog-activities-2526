@@ -23,24 +23,24 @@ class _DiceRollerState extends State<DiceRoller> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              'assests/img/dice$currentDice.png', 
-              width: 250
-              ),
-              const SizedBox(height: 30),
-            TextButton(
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
-                textStyle: TextStyle(
-                  fontSize: 32,
-                )
-              ),
-              onPressed: rollDice, 
-              child: const Text('Roll the Dice')),
-          ],
-        );
+      return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assests/img/dice$currentDice.png', 
+                width: 250
+                ),
+                const SizedBox(height: 30),
+              TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  textStyle: TextStyle(
+                    fontSize: 32,
+                  )
+                ),
+                onPressed: rollDice, 
+                child: const Text('Roll the Dice')),
+            ],
+          );
   }
 }
