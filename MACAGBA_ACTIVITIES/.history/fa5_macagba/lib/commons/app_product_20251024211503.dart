@@ -1,0 +1,22 @@
+import 'package:fa5_macagba/models/products.dart';
+import 'package:flutter/material.dart';
+
+class AppProduct extends StatelessWidget {
+  final Product product;
+
+  const AppProduct({super.key, required this.product});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        children: [
+          Icon(Icons.star),
+          Text(product.name),
+          Text(product.description),
+          Text(product.price.toStringAsFixed(2)),
+        ],
+      ),
+    );
+  }
+}
